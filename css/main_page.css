@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Adjusts layout for additional elements */
+    background-color: #002D6A;
+}
+
+.main-header img {
+    margin: 0 auto;
+    height: 80px;
+    width: auto;
+}
+
+.header-address {
+    color: white;
+    display: flex;
+    min-height: 44px;
+    padding: 4px 10px 4px 50px;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 22px;
+    flex-direction: column;
+}
+
+.header-address:hover {
+    color: white;
+    display: flex;
+    min-height: 44px;
+    padding: 4px 10px 4px 50px;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 22px;
+    flex-direction: column;
+    background-color: blue;
+}
