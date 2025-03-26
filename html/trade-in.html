@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newegg Trade-In Program</title>
+    <link rel="icon" href="../assets/Main/newegg-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/trade-in.css">
+    <link rel="alternative stylesheet" href="../css/main_page.css">
+</head>
+<body>
+    <header class="trade-in-header">
+        <div class="header-container">
+            <a href="./main_page.html" class="logo">
+                <img src="../assets/trade-in-img/Newegg_full_color_logo_RGB.SVG" alt="Newegg Logo">
+            </a>
+
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products..." id="search">
+                    <button type="submit">🔍</button>
+                </div>
+
+                <div class="header-icons">
+                    <!-- href="index.html" -->
+                    <a href="" class="account-icon">
+                        <img src="../assets/trade-in-img/my-account-icon.png" alt="My Account">
+                    </a>
+                    <a href="" class="cart-icon">
+                        <img src="../assets/trade-in-img/shopping-cart-icon.png" alt="Shopping Cart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- href="index.html" -->
+            <li><a href="./main_page.html">Home</a></li>
+            <li><a href="./best-sellers.html">Best Seller</a></li>
+            <li><a href="./trade-in.html">Trade-In</a></li>
+            <li><a href="./trade-in-contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="../assets/trade-in-img/trade-in-your-GPU-CPU.png" alt="Trade In Your GPU/CPU">
+    </section>
+
+    <section class="trade-in-form">
+        <h2>Enter Your Product Details</h2>
+        <form class="product-form" action="./trade-in-value.html" method="POST" onsubmit="return thankYouMessage();">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" placeholder="e.g., RTX 3080, Intel i9-9900K">
+
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" placeholder="e.g., NVIDIA, AMD, Intel">
+
+            <label for="condition">Condition:</label>
+            <select id="condition">
+                <option value="new">New</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="broken">Broken</option>
+            </select>
+
+            <label for="upload">Upload Product Image:</label>
+            <input type="file" id="upload">
+
+            <button type="submit">Check Trade-In Value</button>
+        </form>
+    </section>
+    <section class="trade-in-table">
+        <h2>What is your GPU/CPU worth?</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="background: #4A2FA0; color: white;">NVIDIA GPUs</th>
+                    <th style="background: #A02F4A; color: white;">AMD GPUs</th>
+                    <th style="background: #2F4AA0; color: white;">Intel CPUs</th>
+                    <th style="background: #A04A2F; color: white;">AMD CPUs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GTX 1650 4GB - $41.00</td> <td>RX 5500 XT 4GB - $35.00</td> <td>i3-12100F - $45.00</td> <td>Ryzen 5 7600 - $110.00</td>
+                </tr>
+                <tr>
+                    <td>GTX 1660 6GB - $47.00</td> <td>RX 6600 8GB - $108.00</td> <td>i5-12600K - $93.00</td> <td>Ryzen 7 7700X - $180.00</td>
+                </tr>
+                <tr>
+                    <td>RTX 2060 6GB - $104.00</td> <td>RX 6700 XT 12GB - $195.00</td> <td>i7-12700K - $120.00</td> <td>Ryzen 9 7900X3D - $235.00</td>
+                </tr>
+                <tr>
+                    <td>RTX 3060 Ti 8GB - $197.00</td> <td>RX 6800 XT 16GB - $322.00</td> <td>i9-13900KF - $260.00</td> <td>EPYC 4464P - $300.00</td>
+                </tr>
+                <tr>
+                    <td>RTX 3070 Ti 8GB - $261.00</td> <td>RX 7900 XTX - $670.00</td> <td>XEON E-2336 - $220.00</td> <td>Ryzen 9 9950X - $370.00</td>
+                </tr>
+                <tr>
+                    <td>RTX 4090 24GB - $1,350.00</td> <td>RX 7800 XT - $340.00</td> <td>i9-14900KS - $380.00</td> <td>Ryzen 7 9800X3D - $300.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="terms-section">
+        <p class="terms">See <a href="#">terms and conditions</a> for more details on trade-in value.</p>
+    </section>
+    
+    <section class="trade-in-faq">
+        <h2>FAQs</h2>
+        
+        <details>
+            <summary>How does the program work?</summary>
+            <p>You can trade in your GPU or CPU by filling out the trade-in form, receiving an estimated value, and sending your device to us.</p>
+        </details>
+        
+        <details>
+            <summary>Can I trade in my GPU/CPU for a Gaming Desktop or Gaming Laptop?</summary>
+            <p>Currently, trade-in value is provided as store credit, which can be used toward a new purchase.</p>
+        </details>
+    
+        <details>
+            <summary>What happens if my GPU/CPU is rejected?</summary>
+            <p>If your device does not meet trade-in requirements, you will be notified and given options to return it or recycle it.</p>
+        </details>
+    
+        <details>
+            <summary>How much will I get for my trade-in?</summary>
+            <p>Trade-in values vary depending on the model and condition of your device.</p>
+        </details>
+    
+        <details>
+            <summary>How do I send back my device?</summary>
+            <p>We provide a shipping label once your trade-in is approved.</p>
+        </details>
+    
+        <details>
+            <summary>Can I cancel a trade-in?</summary>
+            <p>Trade-ins can be canceled before the device is shipped.</p>
+        </details>
+    
+        <details>
+            <summary>Where is the Newegg Trade-in Program offered?</summary>
+            <p>Currently, the program is available in select regions. Please check our website for details.</p>
+        </details>
+    </section>
+
+    <section class="email-help">
+        <h2>Still need help?</h2>
+        <p>Enter your email below, and our team will contact you for further assistance.</p>
+        <form class="email-form" action="./trade-in-thank-you.html" method="POST" onsubmit="return thankYouMessage();">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-buttons">
+            <a href="index.html" class="footer-btn">Home</a>
+            <a href="./trade-in.html" class="footer-btn">Trade-In</a>
+            <a href="./trade-in-contact-us.html" class="footer-btn">Contact Us</a>
+        </div>
+        <p>&copy; 2025 Newegg. All rights reserved.</p>
+        <p>Student ID: 2420210359. Name: Tay Zar Oo.</p>
+    </footer>
+
+</body>
+</html>

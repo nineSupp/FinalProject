@@ -1,0 +1,202 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.trade-in-header {
+    background-color: #f5f5f5;
+    padding: 10px 0; /* Reduce padding to bring it closer to the top */
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    box-shadow: gray;
+}
+
+/* Header Container - Keeps Logo & Search Bar Inline */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0;  /* Remove any unwanted left margin */
+    padding-left: 10px; /* Small padding for spacing */
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Search Container (Holds Search Bar & Icons) */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 1000px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* Account & Cart Icons */
+.account-icon img,
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.account-icon img:hover,
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Navigation Bar */
+nav {
+    background: #002147;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Us Section */
+.contact-us {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-form {
+    width: 100%;
+    height: 100%
+}
+
+.contact-us h2 {
+    text-align: center;
+    color: #002147;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    text-align: center;
+    font-size: 16px;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-us label {
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    border-color: #4A2FA0;
+}
+
+.contact-us textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-us button {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background: #f5f5f5;
+}

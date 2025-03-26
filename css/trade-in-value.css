@@ -1,0 +1,114 @@
+.trade-in-header {
+    background-color: #f5f5f5;
+    padding: 10px 0; /* Reduce padding to bring it closer to the top */
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    box-shadow: gray;
+}
+
+/* Header Container - Keeps Logo & Search Bar Inline */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0;  /* Remove any unwanted left margin */
+    padding-left: 10px; /* Small padding for spacing */
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Search Container (Holds Search Bar & Icons) */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 1000px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* Account & Cart Icons */
+.account-icon img,
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.account-icon img:hover,
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Page Not Available Styling */
+.not-available {
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    color: #333;
+}
+
+.not-available h2 {
+    color: #A02F4A;
+}
+
+.not-available .back-btn {
+    display: inline-block;
+    background: #4A2FA0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.not-available .back-btn:hover {
+    background: #371f7c;
+}

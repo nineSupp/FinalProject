@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Newegg Trade-In</title>
+    <link rel="icon" href="../assets/Main/newegg-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/trade-in-contact-us.css">
+    <link rel="alternative stylesheet" href="../css/main_page.css">
+</head>
+<body>
+
+    <header class="trade-in-header">
+        <div class="header-container">
+            <a href="./main_page.html" class="logo">
+                <img src="../assets/trade-in-img/Newegg_full_color_logo_RGB.SVG" alt="Newegg Logo">
+            </a>
+    
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products..." id="search">
+                    <button type="submit">🔍</button>
+                </div>
+    
+                <div class="header-icons">
+                    <a href="index.html" class="account-icon">
+                        <img src="../assets/trade-in-img/my-account-icon.png" alt="My Account">
+                    </a>
+                    <a href="index.html" class="cart-icon">
+                        <img src="../assets/trade-in-img/shopping-cart-icon.png" alt="Shopping Cart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./main_page.html">Home</a></li>
+            <li><a href="./best-sellers.html">Best Seller</a></li>
+            <li><a href="./trade-in.html">Trade-In</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <form class="message-form" action="./trade-in-thank-you-msg.html" method="POST" onsubmit="return thankYouMessage();">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-buttons">
+            <a href="index.html" class="footer-btn">Home</a>
+            <a href="./trade-in.html" class="footer-btn">Trade-In</a>
+            <a href="./trade-in-contact-us.html" class="footer-btn">Contact Us</a>
+        </div>
+        <p>&copy; 2025 Newegg. All rights reserved.</p>
+        <p>Student ID: 2420210359. Name: (Tay Zar Oo).</p>
+    </footer>
+
+</body>
+</html>

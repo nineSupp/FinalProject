@@ -1,0 +1,350 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.trade-in-header {
+    background-color: #f5f5f5;
+    padding: 10px 0; /* Reduce padding to bring it closer to the top */
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    box-shadow: gray;
+}
+
+/* Header Container - Keeps Logo & Search Bar Inline */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0;  /* Remove any unwanted left margin */
+    padding-left: 10px; /* Small padding for spacing */
+}
+
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Search Container (Holds Search Bar & Icons) */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 1000px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* Account & Cart Icons */
+.account-icon img,
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.account-icon img:hover,
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #002147;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.how-it-works h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Center YouTube Video */
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Trade-In Form */
+.trade-in-form {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.trade-in-form h2 {
+    margin-bottom: 20px;
+}
+
+.product-form {
+    width: 100%;
+    height: 100%;
+}
+
+.trade-in-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.trade-in-form input,
+.trade-in-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.trade-in-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Trade-In Table Styling */
+.trade-in-table {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Table Layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Headers */
+thead th {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Table Cells */
+tbody td {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #ffe680;
+}
+
+/* Terms Section */
+.terms-section {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+.terms-section .terms {
+    font-weight: bold;
+}
+
+.terms a {
+    color: #0044cc;
+    text-decoration: underline;
+}
+
+/* FAQ Section */
+.trade-in-faq {
+    margin: 40px auto;
+    width: 95%;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* FAQ Title Styling */
+.trade-in-faq h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+/* FAQ Styling */
+details {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* Thin line between questions */
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+details p {
+    font-size: 16px;
+    margin: 5px 0 10px;
+    padding-left: 15px;
+    color: #333;
+}
+
+/* Email Help Section */
+.email-help {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-help h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.email-help p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Email Form */
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-form input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-form button {
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.email-form button:hover {
+    background-color: #e6b800;
+}

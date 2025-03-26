@@ -1,2 +1,0 @@
-Monday - (03/03/25):
- - Initial Commit (main.html, commit_logs.txt)
